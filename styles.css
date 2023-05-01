@@ -4,63 +4,70 @@
     padding: 0;
     border-radius:30px;
 }
+
+ body {
+    padding:1% 20%;
+    margin:0 auto;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size:16px;
+    background-color:rgb(204, 204, 250);
+    background-image:url(./imgs/blue-background.jpg);
+    text-align:center;
+    border-style:ridge;
+}   
+
 nav li, h1 {
     display:flex;
-    justify-content:center;
-    align-content:center;
-    padding:5% 25%;
-    margin:2% 10%;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size:30px;
-    text-align:center;
-    font-weight:bold;
+    justify-content: center;
+    align-content: center;
+    padding: 5% 25%;
+    margin: 2%, 10%;
 }
+
+ nav li, h1, h2, h3 {
+ 
+    font-weight:800px;
+    font-size:30px;
+ }
+
+ h2, h3 {
+    
+    padding:2%;
+    border:10px solid rgb(38, 38, 90);
+ }
+
+ h1 {
+    font-size:50px;
+    background-color:rgb(40, 40, 82);
+    color:rgb(135, 135, 211);
+    border: 15px solid rgb(135, 135, 211);
+ }
+
+
+
+ p, .description, .ingredients, .steps {
+ text-align:left;
+ }
+
 li.links-home {
     background-color:lavender;
     opacity:0.8;
     border:15px solid rgb(81, 81, 165);
     border-style:ridge;
 }
-h1 {
-    font-size:50px;
-    font-weight:800px;
-    background-color:rgb(40, 40, 82);
-    color:rgb(135, 135, 211);
-    border: 15px solid rgb(135, 135, 211);
-    border-style:ridge;
-}
 
-h2, h3 {
+h2, h3, .description, .ingredients, .steps  {
     background-color:aliceblue;
-color:black;
-font-size:30px;
-font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-font-weight:bold;
-padding:2%;
-margin:0 auto;
-border:10px solid rgb(38, 38, 90);
-border-style:ridge;
-text-align:center;
+    color:black;
 }
 
-body {
-    padding:1% 20%;
-    margin:0 auto;
-    text-align:left;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size:16px;
-    background-color:rgb(204, 204, 250);
-    background-image:url(./imgs/blue-background.jpg);
-}    
+
 .description, .ingredients, .steps {
-background-color:aliceblue;
-color:black;
-font-size:20px;
-font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-padding:10%;
-margin:0 auto;
-border:10px solid rgb(38, 38, 90);
-border-style:ridge;
+    font-size:25px;
+    padding:5% 10%;
+    border:10px solid rgb(38, 38, 90);
+    line-height:1.4;
+    
 }
 
 img {
@@ -69,8 +76,7 @@ img {
     width:80%;
     height:auto;
     border-radius: 30%;
-    border:15px solid rgb(48, 48, 114);
-    border-style:ridge;
+    border:15px double rgb(48, 48, 114);
 }
 
 li a {
@@ -78,28 +84,25 @@ li a {
     color:aliceblue;
     padding:10%;
     border:10px double rgb(7, 7, 15);
-    border-style:ridge;
 }
 
-a:link { 
+a:link, a:visited, a:active { 
     text-decoration: none; 
 }
-
+/*
 a:visited { 
     text-decoration: none; 
 }
-
+*/
 a:hover { 
     text-decoration: underline; 
 }
-
+/*
 a:active { 
     text-decoration: none; 
 }
+*/
 
-footer, footer a, h4 {
-    text-align:center;
-}
 footer {
     color:white;
 }
@@ -108,8 +111,9 @@ footer a {
     font-weight:bold;
 }
 
-
-
+li.links-home, h1, h2, h3, .description, .ingredients, .steps, img, li a {
+    border-style:ridge;
+ }
 
 
 
